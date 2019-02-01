@@ -1,0 +1,2 @@
+rosbash enables tab-completion for its own tools and for a number of other ros utilities:
+  rosmake, roslaunch, rosparam, rosnode, rostopic, rosservice, rosmsg, rossrv, rosbag.

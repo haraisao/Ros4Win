@@ -1,0 +1,4 @@
+catkin_pkg=https://github.com/ros-infrastructure/catkin_pkg
+rosdep=http://github.com/haraisao/rosdep
+rosdistro=http://github.com/ros-infrastructure/rosdistro
+rospkg=http://github.com/ros-infrastructure/rospkg
