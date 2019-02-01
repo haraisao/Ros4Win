@@ -18,6 +18,7 @@ robot/metapackages=https://github.com/ros/metapackages
 robot/robot_state_publisher=https://github.com/haraisao/robot_state_publisher
 robot/urdf=https://github.com/haraisao/urdf
 robot/xacro=https://github.com/ros/xacro
+roslint=https://github.com/ros/roslint
 rqt_common_plugins/rqt=https://github.com/haraisao/rqt
 rqt_common_plugins/rqt_action=https://github.com/ros-visualization/rqt_action
 rqt_common_plugins/rqt_bag=https://github.com/haraisao/rqt_bag
