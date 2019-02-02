@@ -1,5 +1,5 @@
 common_tutorials=https://github.com/ros/common_tutorials
 geomerty_tutorials=https://github.com/ros/geometry_tutorials
-ros_tutorials=https://github.com/haraisao/ros_tutorials
+ros_tutorials=https://github.com/haraisao/ros_tutorials,Ros4Win
 urdf_tutorial=https://github.com/ros/urdf_tutorial
-visualization_tutorials=https://github.com/haraisao/visualization_tutorials
+visualization_tutorials=https://github.com/haraisao/visualization_tutorials,Ros4Win
