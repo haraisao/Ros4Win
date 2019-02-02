@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 
 set PWD=%CD%
 set PKG_NAME=%1
-set GIT_CMD=%2
+
 set PKG_LIST=%~dp0%PKG_NAME%\pkg_list.txt
 
 if "%1" == "" goto :error
