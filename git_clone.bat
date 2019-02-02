@@ -8,21 +8,20 @@ set GIT_CMD=%2
 set PKG_LIST=%~dp0%PKG_NAME%\pkg_list.txt
 
 if "%1" == "" goto :error
-if "%2" == "" goto :error
 
 FOR /F %%X in ( %PKG_LIST% ) do (
   for /f "tokens=1,2 delims==" %%a in ("%%X") do (
      set TARGET=%PKG_NAME%\%%a
      mkdir !TARGET:/=\!
      cd !TARGET:/=\!\..
-     git %GIT_CMD% %%b
+     git clone %%b
      cd %PWD%
   )
 )
 goto :end
 
 :error
-echo Usage:%0 <pkg_name> <git command>
+echo Usage:%0 <pkg_name> 
 
 :end
 endlocal
