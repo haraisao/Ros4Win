@@ -14,7 +14,13 @@ FOR /F %%X in ( %PKG_LIST% ) do (
      set TARGET=%PKG_NAME%\%%a
      mkdir !TARGET:/=\!
      cd !TARGET:/=\!\..
-     git clone %%b
+     for /f "tokens=1,2 delims=," %%p in ("%%b") do (
+       if "%%q" == "" (
+           git clone %%p
+       ) else (
+           git clone -b %%q %%p
+       )
+     )
      cd %PWD%
   )
 )
