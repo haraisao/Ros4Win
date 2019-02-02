@@ -9,6 +9,6 @@ xcopy /E /Y env.bat %ROS_HOME%
 xcopy /E /Y setup.bat %ROS_HOME%
 xcopy /E /Y _setup_util.py %ROS_HOME%
 
-rem call installPyCmd.bat pycmd_list.txt
+call installPyCmd.bat pycmd_list.txt
 :END
 @echo on
