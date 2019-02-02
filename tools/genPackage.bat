@@ -12,6 +12,6 @@ cmake --build build/%1 --config Release --target INSTALL
 @exit /b 0
 
 :error_exit
-@echo ERROR occured...
+@echo ERROR occured... [%1]
 @set ERRORLEVEL=1
 @exit /b 1
