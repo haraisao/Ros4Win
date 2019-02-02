@@ -19,7 +19,7 @@ call :get_pkg %PKG_NAME_ALL:/= %
 call :replace PKG_NAME_ALL %PKG_NAME%
 
 FOR /F %%i in ('ros_location_find.bat %PKG_NAME%') do set PKG_SHARE_DIR=%%i
-if "y%PKG_SHARE_DIR%" == "y" (
+if "y%PKG_SHARE_DIR%" == "yError" (
    dir /D
    goto :END
 ) 

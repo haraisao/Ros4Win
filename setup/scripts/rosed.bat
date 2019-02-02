@@ -19,7 +19,7 @@ if "y%PKG_SHARE_DIR%" == "yError" (
 
 set FILE_NAME_ABS=%PKG_SHARE_DIR%\%FILE_NAME:/=\%
 
-%ROS_EDITOR%  %FILE_NAME_ABS%
+%EDITOR%  %FILE_NAME_ABS%
 
 goto :END
 

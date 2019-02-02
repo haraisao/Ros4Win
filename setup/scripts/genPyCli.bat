@@ -1,19 +1,24 @@
 @echo off
 setlocal
 set CLI_CMD=cli-64.exe
+set SCRIPT_ONLY=
+
 if "%1" == "--gui" (
     set CLI_CMD=gui-64.exe
-)
+    shift
+) else (
+    if "%1" == "--script-only" (
+        set SCRIPT_ONLY=y
+        shift
+    )
+) 
 
-set CMD_NAME=%ROS_HOME%\bin\%1
+set CMD_NAME=%1
 
 if "%1" == "" goto :error
-if not exist %CMD_NAME%  goto error
+if not exist %CMD_NAME%  goto :error
 
-if "%PYTHON_DIR%" == "" (
-    set PYTHON_DIR=C:\Python37
-)
-
+if "%PYTHON_DIR%" == "" set PYTHON_DIR=%~d0\local\Python37
 set PYTHON_EXE=%PYTHON_DIR%\python.exe
 set SETUP_TOOL_CLI=%PYTHON_DIR%\Lib\site-packages\setuptools\%CLI_CMD%
 
@@ -34,12 +39,14 @@ echo        '__package__': None,  >> %SCR_NAME%
 echo    }  >> %SCR_NAME%
 echo    exec(compile(fh.read(), python_script, 'exec'), context)  >> %SCR_NAME%
 
-copy %SETUP_TOOL_CLI% %CMD_NAME%.exe
+if "%SCRIPT_ONLY%" == "" (
+    @copy %SETUP_TOOL_CLI% %CMD_NAME%.exe
+)
 
 goto :end
 
 :error
-echo Usage: %0 [script_name]
+echo Usage: %0 [script_name] (%CMD_NAME%)
 
 :end
 @echo on
