@@ -1,0 +1,9 @@
+*.pyc
+*/build
+setup/bin
+init/*/
+base/*/
+dsk/*/
+tut/*/
+
+
