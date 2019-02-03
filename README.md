@@ -16,7 +16,7 @@ Ros for Windows ( VS2017 )
  > chPyShebang.bat
 ~~~
 
-## Build Ros4Win
+## Build and install Ros4Win
 ~~~
   > cd base
   > install_ros flist1.txt
