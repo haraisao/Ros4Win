@@ -6,9 +6,9 @@
 @call %~dp0..\setCMakeVars.bat
 
 @echo off
-@for /f "delims=" %%a in (%1) do (
+@for /f "delims=" %%a in (%1) do @(
   @call genPyCli.bat %%a
-  @if ERRORLEVEL 1 goto END
+  @if ERRORLEVEL 1 goto :END
 )
 
 :END
