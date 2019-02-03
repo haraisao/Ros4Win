@@ -2,6 +2,11 @@
 setlocal enabledelayedexpansion
 set QT_QPA_PLATFORM_PLUGIN_PATH=%ROS_HOME%\bin\platforms
 
+set START=
+if "%1" == "--start" (
+  set START=start
+  shift
+)
 set PYTHON=
 set PKG_NAME=%1
 shift
@@ -33,14 +38,14 @@ if "%CMD_NAME%" == "%CMD_NAME:/=%" (
   FOR %%i in ( %CATKIN_LIBEXEC_DIR:/=\% ) do (
     FOR /F %%x in ('findfile.bat /r %%i  %CMD_NAME%') do ( 
       if  not "%%x" == "" (
-        %PYTHON%  %%x %ARGS%
+        %START% %PYTHON%  %%x %ARGS%
         goto :END
       )
     )
   )
   if not "%PKG_SHARE_DIR%" == "Error" (
       if exist %PKG_LIB_DIR%\%CMD_NAME% (
-        %PYTHON% %PKG_LIB_DIR%\%CMD_NAME% %ARGS%
+        %START% %PYTHON% %PKG_LIB_DIR%\%CMD_NAME% %ARGS%
       ) else (
         echo No such file  %PKG_LIB_DIR%\%CMD_NAME%
       )
@@ -48,9 +53,9 @@ if "%CMD_NAME%" == "%CMD_NAME:/=%" (
 
 ) else (
   if "%PKG_SHARE_DIR%" == "Error" (
-    %PYTHON% %CMD_NAME% %ARGS%
+    %START% %PYTHON% %CMD_NAME% %ARGS%
   ) else (
-    %PYTHON% %PKG_LIB_DIR%\%CMD_NAME% %ARGS%
+    %START% %PYTHON% %PKG_LIB_DIR%\%CMD_NAME% %ARGS%
   )
 )
 
