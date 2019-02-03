@@ -35,9 +35,17 @@ Ros for Windows ( VS2017 )
   ...
 ~~~
 
-## Setup ROS
+## Setup Ros4Win
  ~~~
  > cd setup
  > install.bat
  ...
 ~~~ 
+
+## Run Ros4Win
+~~~
+ > cd \opt
+ > start_ros.bat
+ You will see terminal window.
+ >env.bat
+ ~~~
