@@ -14,7 +14,9 @@ set CMD_NAME=%1
 set EXT=%~x1
 shift
 
-if "%EXT%" == "" set CMD_NAME=%CMD_NAME%.exe
+if "%CMD_NAME%" == "" set CMD_NAME=%PKG_NAME%
+
+@rem if "%EXT%" == "" set CMD_NAME=%CMD_NAME%.exe
 if "%EXT%" == ".py" set PYTHON=python.exe
 
 set ARGS=
@@ -38,7 +40,12 @@ if "%CMD_NAME%" == "%CMD_NAME:/=%" (
   FOR %%i in ( %CATKIN_LIBEXEC_DIR:/=\% ) do (
     FOR /F %%x in ('findfile.bat /r %%i  %CMD_NAME%') do ( 
       if  not "%%x" == "" (
-        %START% %PYTHON%  %%x %ARGS%
+        set EXT=%%x
+        if not "!EXT:~-4!" == ".exe" (
+          %START% python %%x %ARGS%
+        ) else (
+          %START% %%x %ARGS%
+        )
         goto :END
       )
     )
@@ -61,4 +68,5 @@ if "%CMD_NAME%" == "%CMD_NAME:/=%" (
 
 :END
 endlocal
+echo Finished
 @echo on
