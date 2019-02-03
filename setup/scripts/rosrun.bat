@@ -7,16 +7,17 @@ if "%1" == "--start" (
   set START=start
   shift
 )
+
 set PYTHON=
 set PKG_NAME=%1
 shift
+
 set CMD_NAME=%1
 set EXT=%~x1
 shift
 
 if "%CMD_NAME%" == "" set CMD_NAME=%PKG_NAME%
-
-@rem if "%EXT%" == "" set CMD_NAME=%CMD_NAME%.exe
+rem if "%EXT%" == ""    set CMD_NAME=%CMD_NAME%.exe
 if "%EXT%" == ".py" set PYTHON=python.exe
 
 set ARGS=
@@ -40,12 +41,9 @@ if "%CMD_NAME%" == "%CMD_NAME:/=%" (
   FOR %%i in ( %CATKIN_LIBEXEC_DIR:/=\% ) do (
     FOR /F %%x in ('findfile.bat /r %%i  %CMD_NAME%') do ( 
       if  not "%%x" == "" (
-        set EXT=%%x
-        if not "!EXT:~-4!" == ".exe" (
-          %START% python %%x %ARGS%
-        ) else (
-          %START% %%x %ARGS%
-        )
+        set CMD=%%x
+        if not "!CMD:~-4!" == ".exe" ( set CMD=python.exe !CMD! )
+        %START% !CMD! %ARGS%
         goto :END
       )
     )
@@ -59,14 +57,14 @@ if "%CMD_NAME%" == "%CMD_NAME:/=%" (
   )
 
 ) else (
+  echo xxx
   if "%PKG_SHARE_DIR%" == "Error" (
-    %START% %PYTHON% %CMD_NAME% %ARGS%
+     %START% %PYTHON% %CMD_NAME% %ARGS%
   ) else (
-    %START% %PYTHON% %PKG_LIB_DIR%\%CMD_NAME% %ARGS%
+     %START% %PYTHON% %PKG_LIB_DIR%\%CMD_NAME% %ARGS%
   )
 )
 
 :END
 endlocal
-echo Finished
 @echo on
