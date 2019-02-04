@@ -49,7 +49,7 @@ resource_retriever -DCURL_INCLUDE_DIR=/local/curl/include -DCURL_LIBRARY=/local/
 vision_opencv/image_geometry
 vision_opencv/vision_opencv
 vision_opencv/opencv_tests
-vision_opencv/cv_bridge -DBOOST_DYN_LIB=1
+vision_opencv/cv_bridge
 viz/python_qt_binding
 viz/qt_gui_core/qt_gui_core
 viz/qt_gui_core/qt_gui
@@ -85,7 +85,7 @@ rqt_common_plugins/rqt_top
 rqt_common_plugins/rqt_topic
 rqt_common_plugins/rqt_web
 image_common/image_common
-image_common/camera_calibration_parsers -Dyaml-cpp_DIR=/local/YAML_CPP/CMake -DBOOST_DYN_LIB=1
+image_common/camera_calibration_parsers -Dyaml-cpp_DIR=/local/YAML_CPP/CMake
 image_common/camera_info_manager
 image_common/polled_camera
 rqt_robot_plugins/rqt_moveit
