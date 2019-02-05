@@ -1,11 +1,11 @@
 angles/angles
 control_msgs/control_msgs
 urdfdom_headers
-urdfdom -DTinyXML_ROOT_DIR=/local/TinyXML1
+urdfdom
 roslint
 robot/xacro
 robot/urdf/urdf_parser_plugin
-robot/urdf/urdf -DTinyXML_ROOT_DIR=/local/TinyXML1
+robot/urdf/urdf 
 robot/xacro
 robot/diagnostics/diagnostic_aggregator
 robot/diagnostics/diagnostic_analysis
@@ -36,7 +36,7 @@ robot/geometry/kdl_conversions
 robot/geometry/eigen_conversions 
 robot/geometry/tf
 robot/geometry/tf_conversions
-robot/kdl_parser/kdl_parser -DTinyXML_ROOT_DIR=/local/TinyXML1
+robot/kdl_parser/kdl_parser 
 robot/kdl_parser/kdl_parser_py
 robot/joint_state_publisher/joint_state_publisher
 robot/robot_state_publisher
@@ -55,7 +55,7 @@ viz/qt_gui_core/qt_gui_core
 viz/qt_gui_core/qt_gui
 viz/qt_gui_core/qt_gui_app
 viz/qt_gui_core/qt_gui_core
-viz/qt_gui_core/qt_gui_cpp  -DTinyXML_ROOT_DIR=c:/local/TinyXML1
+viz/qt_gui_core/qt_gui_cpp
 viz/qt_gui_core/qt_gui_py_common
 viz/qt_gui_core/qt_dotgraph
 rqt_common_plugins/rqt/rqt

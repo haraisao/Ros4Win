@@ -2,6 +2,12 @@
 @echo off
 setlocal enabledelayedexpansion
 
+set NO_DIFF=
+
+if "%1" == "--check-only" (
+  set NO_DIFF=1
+  shift
+)
 set PWD=%CD%
 set PKG_NAME=%1
 
@@ -22,7 +28,10 @@ FOR /F %%X in ( %PKG_LIST% ) do (
        if not "!FLAG!" == ""  (
          set /A GIT_DIFF = !GIT_DIFF! + 1
          echo === %%a ===
-         git diff
+
+         if "%NO_DIFF%" == "" (
+            git diff
+         ) 
        )
      )
      cd %PWD%
