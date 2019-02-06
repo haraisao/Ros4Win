@@ -3,7 +3,7 @@
 @set ERRORLEVEL=0
 
 @setlocal
-@call %~dp0..\setCMakeVars.bat
+@call %~dp0..\tools\setCMakeVars.bat
 
 @echo off
 @for /f "delims=" %%a in (%1) do @(
