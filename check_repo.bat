@@ -2,10 +2,10 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set NO_DIFF=
+set NO_DIFF=1
 
-if "%1" == "--check-only" (
-  set NO_DIFF=1
+if "%1" == "-v" (
+  set NO_DIFF=
   shift
 )
 set PWD=%CD%
