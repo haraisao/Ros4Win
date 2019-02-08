@@ -16,7 +16,7 @@ set TinyXML2_ROOT_DIR=%~d0/local/TinyXML2
 
 set LZ4_ROOT=%~d0/local/lz4
 set BZIP2_DIR=%~d0/local/bzip2-dev
-rem set TinyXML_ROOT_DIR=%~d0/local/TinyXML
+set CURL_ROOT=%~d0/local/curl
 set LLVM_INSTALL_DIR=%~d0\local\LLVM
 set QTDIR=%~d0\local\Qt\5.12.0\msvc2017_64
 set Eigen3_DIR=%~d0/local/Eigen3/share/eigen3/cmake

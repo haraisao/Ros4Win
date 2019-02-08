@@ -45,7 +45,7 @@ navigation_msgs/move_base_msgs
 laser_geometry
 interactive_markers
 media_export
-resource_retriever -DCURL_INCLUDE_DIR=/local/curl/include -DCURL_LIBRARY=/local/curl/lib/libcurl_imp.lib
+resource_retriever
 vision_opencv/image_geometry
 vision_opencv/vision_opencv
 vision_opencv/opencv_tests
