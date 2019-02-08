@@ -21,6 +21,7 @@ set LLVM_INSTALL_DIR=%~d0\local\LLVM
 set QTDIR=%~d0\local\Qt\5.12.0\msvc2017_64
 set Eigen3_DIR=%~d0/local/Eigen3/share/eigen3/cmake
 set OpenCV_DIR=%~d0/local/opencv-3.4.5
+set LOG4CXX_ROOT=%~d0/local/log4cxx
 
 set PATH=%QTDIR%\bin;%LLVM_INSTALL_DIR%\bin;%PATH%
 
