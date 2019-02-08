@@ -3,7 +3,6 @@
 if "y%ROS_HOME%" == "y" goto :END
 
 xcopy /E opt\*.* %~d0\opt\
-xcopy /E bin\*.* %ROS_HOME%\bin\
 xcopy /E scripts %ROS_HOME%\scripts\
 copy /Y ros_setup.bat %ROS_HOME%
 copy /Y env.bat %ROS_HOME%
