@@ -1,5 +1,7 @@
 @echo off
 
+call %~dp0..\tools\setCMakeVars.bat
+
 if "y%ROS_HOME%" == "y" goto :END
 
 xcopy /E opt\*.* %~d0\opt\
