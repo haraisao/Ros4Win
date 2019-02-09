@@ -12,3 +12,5 @@ call %~dp0tools\install_ros flist1.txt
 
 cd %~dp0setup
 call install
+
+pause
