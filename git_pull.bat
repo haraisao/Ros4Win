@@ -19,7 +19,7 @@ FOR /F %%X in ( %PKG_LIST% ) do (
 goto :end
 
 :error
-echo Usage:%0 <pkg_name> 
+echo Usage:git_pull <pkg_name> 
 
 :end
 endlocal
