@@ -1,0 +1,5 @@
+control_toolbox=https://github.com/haraisao/control_toolbox,Ros4Win
+four_wheel_steering_msgs=https://github.com/ros-drivers/four_wheel_steering_msgs 
+realtime_tools=https://github.com/ros-controls/realtime_tools 
+ros_control=https://github.com/ros-controls/ros_control 
+ros_controllers=https://github.com/haraisao/ros_controllers,Ros4Win

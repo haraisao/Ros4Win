@@ -1,0 +1,41 @@
+libccd
+octomap
+eigen_stl_containers
+random_numbers
+urdf_parser_py
+srdfdom
+octomap_msgs
+object_recognition_msgs
+moveit_msgs
+geometric_shapes -DASSIMP_DIR=/local/Assimp/lib/cmake/assimp-3.3 -DQHULL_INCLUDE_DIR=C:/local/qhull/include -DQHULL_LIBRARY=C:/local/qhull/lib/qhull.lib
+warehouse_ros
+fcl
+moveit/moveit
+moveit/moveit_core
+moveit/moveit_commander
+moveit/moveit_ros/perception -DGLEW_INCLUDE_DIR=C:/local/glew-2.2/include -DGLEW_LIBRARY=C:/local/glew-2.2/lib/glew32.lib -DGLUT_ROOT_PATH=C:/local/freeglut
+moveit/moveit_ros/planning
+moveit/moveit_ros/warehouse
+moveit/moveit_ros/move_group
+moveit/moveit_ros/manipulation
+moveit/moveit_ros/planning_interface
+moveit/moveit_ros/benchmarks
+moveit/moveit_ros/moveit_ros
+moveit/moveit_ros/robot_interaction
+moveit/moveit_ros/visualization
+moveit/moveit_runtime
+moveit/moveit_setup_assistant -Dyaml-cpp_DIR=/local/YAML_CPP/CMake
+moveit/moveit_kinematics
+moveit/moveit_plugins/moveit_controller_manager_example
+moveit/moveit_plugins/moveit_fake_controller_manager
+moveit/moveit_plugins/moveit_plugins
+moveit/moveit_plugins/moveit_simple_controller_manager
+controller_manager_msgs
+moveit/moveit_plugins/moveit_ros_control_interface
+moveit/moveit_experimental
+moveit/moveit_planners/moveit_planners
+moveit/moveit_planners/chomp/chomp_motion_planner
+moveit/moveit_planners/chomp/chomp_optimizer_adapter
+moveit/moveit_planners/chomp/chomp_interface
+moveit/moveit_planners/ompl -Dompl_DIR=/local/ompl-1.4.2/share/ompl/cmake
+

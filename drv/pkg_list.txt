@@ -1,0 +1,4 @@
+camera_node=https://github.com/BrainSpawnInfosphere/camera_node 
+camera_umd=https://github.com/ros-drivers/camera_umd 
+cv_camera=https://github.com/OTL/cv_camera 
+usb_cam=https://github.com/haraisao/usb_cam,Ros4Win

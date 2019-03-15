@@ -1,0 +1,2 @@
+DynamixelSDK=https://github.com/haraisao/DynamixelSDK,Ros4Win
+franka_ros=https://github.com/haraisao/franka_ros,Ros4Win
