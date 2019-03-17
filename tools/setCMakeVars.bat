@@ -13,6 +13,7 @@ set PATH=%~dp0;%~d0\local\vim;%~d0\local\cmake-3.13.1-win64-x64\bin;%PYTHON_DIR%
 set CMAKE_PREFIX_PATH=%ROS_HOME_CMAKE%
 set BOOSTROOT=%~d0/local/boost_1_68_0
 set TinyXML2_ROOT_DIR=%~d0/local/TinyXML2
+set TinyXML_ROOT_DIR=%~d0/local/TinyXML
 
 set LZ4_ROOT=%~d0/local/lz4
 set BZIP2_DIR=%~d0/local/bzip2-dev
