@@ -2,5 +2,5 @@ graph_msgs
 rviz_visual_tools
 moveit_visual_tools
 pcl_msgs
-perception_pcl/pcl_conversions
-perception_pcl/pcl_ros
+perception_pcl/pcl_conversions -DPCL_DIR=/local/pcl/cmake
+perception_pcl/pcl_ros -DPCL_DIR=/local/pcl/cmake

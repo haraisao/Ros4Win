@@ -5,7 +5,7 @@ if "%1" == "--gui" (
     set CLI_CMD=gui-64.exe
 )
 
-set CMD_NAME=%ROS_HOME%\bin\%1
+set CMD_NAME=%ROS_HOME%\%1
 
 if "%1" == "" goto :error
 if not exist %CMD_NAME%  goto error

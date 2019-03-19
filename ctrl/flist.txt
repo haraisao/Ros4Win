@@ -24,4 +24,4 @@ ros_controllers/velocity_controllers
 urdf_geometry_parser
 ros_controllers/four_wheel_steering_controller
 
-ros_controllers/rqt_joint_trajectory_controller
+#ros_controllers/rqt_joint_trajectory_controller

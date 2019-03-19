@@ -14,7 +14,7 @@
 @set ROS_HOME_CMAKE=%ROS_HOME_CMAKE:~0,-1%
 
 call %~dp0setup.bat
-
+set QT_QPA_PLATFORM_PLUGIN_PATH=%ROS_HOME%\bin\platforms
 set PYTHONPATH=%PYTHON_DIR%\Lib;%PYTHON_DIR%\DLLs;%PYTHON_DIR%\Lib\site-packages;%PYTHONPATH%
 
 @set PATH_ORG=%PATH%
