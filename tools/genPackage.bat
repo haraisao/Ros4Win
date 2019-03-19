@@ -1,20 +1,12 @@
 @if "y%ROS_HOME_CMAKE%" == "y" goto error_exit
 
-set PKG_NAME=%1
-if "%PKG_NAME%" == ""  exit /b 0
-if "%PKG_NAME:~0,1%" == "#"  exit /b 0
+@set PKG_NAME=%1
+@if "%PKG_NAME%" == ""  exit /b 0
+@if "%PKG_NAME:~0,1%" == "#"  exit /b 0
 
-if "%INSTALL_DIR%" == "" (
-  set INSTALL_DIR=%ROS_HOME_CMAKE%
-)
-
-if "%BUILD_DIR%" == "" (
-  set BUID_DIR=%~d0/tmp/build/%PKG_NAME%
-)
-
-if "%BUILD_TYPE%" == "" (
-  set BUID_TYPE=Release
-)
+@if "%INSTALL_DIR%" == "" @set INSTALL_DIR=%ROS_HOME_CMAKE%
+@if "%BUILD_DIR%" == ""   @set BUILD_DIR=%~d0/tmp/build/%PKG_NAME%
+@if "%BUILD_TYPE%" == ""  @set BUILD_TYPE=Release
 
 @set ERRORLEVEL=0
 @echo ===== Build and install ( %PKG_NAME% ) =====
