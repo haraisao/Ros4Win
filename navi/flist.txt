@@ -1,0 +1,16 @@
+navigation/amcl
+navigation/voxel_grid
+navigation/costmap_2d
+navigation/nav_core
+navigation/base_local_planner
+navigation/carrot_planner
+navigation/clear_costmap_recovery
+navigation/dwa_local_planner
+navigation/fake_localization
+navigation/navfn
+navigation/global_planner
+navigation/rotate_recovery
+navigation/move_base
+navigation/move_slow_and_clear
+navigation/navigation
+navigation/map_server  -DBULLET_DYNAMICS_LIBRARY=c:\local\bullet3\lib\BulletDynamics.lib -DBULLET_INCLUDE_DIR=c:\local\bullet3\include -DBULLET_COLLISION_LIBRARY=c:\local\bullet3\lib\BulletCollision.lib -DBULLET_MATH_LIBRARY=c:\local\bullet3\lib\LinearMath.lib -DBULLET_SOFTBODY_LIBRARY=c:\local\bullet3\lib\BulletSoftBody.lib -DSDL_INCLUDE_DIR=c:\local\SDL2\include\SDL2 -DSDL_LIBRARY=c:\local\SDL2\lib\SDL2.lib -DSDL_IMAGE_INCLUDE_DIR=c:\local\SDL2_image\include -DSDL_IMAGE_LIBRARY=C:\local\SDL2_image\lib\SDL2_image.lib
