@@ -1,0 +1,7 @@
+
+robot/diagnostics/diagnostic_aggregator
+robot/diagnostics/diagnostic_analysis
+robot/diagnostics/diagnostic_updater
+robot/diagnostics/diagnostic_common_diagnostics
+robot/diagnostics/diagnostics
+robot/diagnostics/rosdiagnostic
