@@ -3,7 +3,22 @@
 setup/bin
 init/*/
 base/*/
+!base/dist
 dsk/*/
+!dsk/dist
 tut/*/
+!tut/dist
+plan/*/
+!plan/dist
+drv/*/
+!drv/dist
+catkin/*/
+catkin/dist
+ctrl/*/
+ctrl/dist
+navi/*/
+navi/dist
+others/*
 
 melodic-setup.zip
+*.7z

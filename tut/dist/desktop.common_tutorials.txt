@@ -1,0 +1,5 @@
+common_tutorials/common_tutorials
+common_tutorials/pluginlib_tutorials
+common_tutorials/actionlib_tutorials
+common_tutorials/nodelet_tutorial_math
+common_tutorials/turtle_actionlib

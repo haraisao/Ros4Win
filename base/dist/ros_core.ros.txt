@@ -1,0 +1,11 @@
+ros_core/ros/ros
+ros_core/ros/core/mk
+ros_core/ros/core/rosbuild
+ros_core/ros/core/roslang
+ros_core/ros/core/roslib
+ros_core/ros/tools/rosboost_cfg
+ros_core/ros/tools/rosbash
+ros_core/ros/tools/rosclean
+ros_core/ros/tools/roscreate
+ros_core/ros/tools/rosmake
+ros_core/ros/tools/rosunit

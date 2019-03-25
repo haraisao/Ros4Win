@@ -1,0 +1,10 @@
+rqt_robot_plugins/rqt_moveit
+rqt_robot_plugins/rqt_nav_view
+rqt_robot_plugins/rqt_pose_view
+rqt_robot_plugins/rqt_robot_dashboard
+rqt_robot_plugins/rqt_robot_monitor
+rqt_robot_plugins/rqt_robot_plugins
+rqt_robot_plugins/rqt_robot_steering
+rqt_robot_plugins/rqt_runtime_monitor
+rqt_robot_plugins/rqt_tf_tree
+rqt_robot_plugins/rqt_rviz

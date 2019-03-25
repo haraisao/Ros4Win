@@ -1,0 +1,5 @@
+nodelet_core/nodelet_core
+nodelet_core/nodelet
+nodelet_core/nodelet_topic_tools
+nodelet_core/test_nodelet
+nodelet_core/test_nodelet_topic_tools

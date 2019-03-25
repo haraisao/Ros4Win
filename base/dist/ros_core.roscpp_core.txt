@@ -1,0 +1,4 @@
+ros_core/roscpp_core/cpp_common
+ros_core/roscpp_core/rostime
+ros_core/roscpp_core/roscpp_traits
+ros_core/roscpp_core/roscpp_serialization

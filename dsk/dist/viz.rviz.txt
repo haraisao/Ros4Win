@@ -1,0 +1,1 @@
+viz/rviz -DASSIMP_DIR=/local/Assimp/lib/cmake/assimp-3.3 -DOGRE_DIR=/local/ogre-1.10.12/CMake -Dyaml-cpp_DIR=/local/YAML_CPP/CMake 
