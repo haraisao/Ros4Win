@@ -13,11 +13,13 @@ plan/*/
 drv/*/
 !drv/dist
 catkin/*/
-catkin/dist
+!catkin/dist
 ctrl/*/
-ctrl/dist
+!ctrl/dist
 navi/*/
-navi/dist
+!navi/dist
+robot/*/
+!robot/dist
 others/*
 
 melodic-setup.zip
