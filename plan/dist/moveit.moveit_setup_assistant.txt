@@ -1,0 +1,2 @@
+moveit/moveit_setup_assistant -Dyaml-cpp_DIR=/local/YAML_CPP/CMake
+

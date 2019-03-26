@@ -1,0 +1,14 @@
+
+moveit/moveit
+moveit/moveit_ros/perception -DGLEW_INCLUDE_DIR=C:/local/glew-2.2/include -DGLEW_LIBRARY=C:/local/glew-2.2/lib/glew32.lib -DGLUT_ROOT_PATH=C:/local/freeglut
+moveit/moveit_ros/planning
+moveit/moveit_ros/warehouse
+moveit/moveit_ros/move_group
+moveit/moveit_ros/manipulation
+moveit/moveit_ros/planning_interface
+moveit/moveit_ros/benchmarks
+moveit/moveit_ros/moveit_ros
+moveit/moveit_ros/robot_interaction
+moveit/moveit_ros/visualization
+
+

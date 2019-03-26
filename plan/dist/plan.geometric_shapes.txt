@@ -1,0 +1,4 @@
+
+geometric_shapes -DASSIMP_DIR=/local/Assimp/lib/cmake/assimp-3.3 -DQHULL_INCLUDE_DIR=C:/local/qhull/include -DQHULL_LIBRARY=C:/local/qhull/lib/qhull.lib
+
+

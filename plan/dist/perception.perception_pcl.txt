@@ -1,0 +1,3 @@
+pcl_msgs
+perception_pcl/pcl_conversions -DPCL_DIR=/local/pcl/cmake
+perception_pcl/pcl_ros -DPCL_DIR=/local/pcl/cmake

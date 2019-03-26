@@ -1,0 +1,6 @@
+moveit/moveit_planners/moveit_planners
+moveit/moveit_planners/chomp/chomp_motion_planner
+moveit/moveit_planners/chomp/chomp_optimizer_adapter
+moveit/moveit_planners/chomp/chomp_interface
+moveit/moveit_planners/ompl -Dompl_DIR=/local/ompl-1.4.2/share/ompl/cmake
+

@@ -1,0 +1,7 @@
+
+moveit/moveit_plugins/moveit_controller_manager_example
+moveit/moveit_plugins/moveit_fake_controller_manager
+moveit/moveit_plugins/moveit_plugins
+moveit/moveit_plugins/moveit_simple_controller_manager
+moveit/moveit_plugins/moveit_ros_control_interface
+
