@@ -6,9 +6,7 @@ REM It tries it's best to undo changes from a previously sourced setup file befo
 REM Supported command line options:
 REM --extend: skips the undoing of changes from a previously sourced setup file
 
-if "%ROS_HOME_CMAKE%" == ""  set ROS_HOME_CMAKE=D:/opt/ros/melodic
-
-set _SETUP_UTIL=%ROS_HOME_CMAKE%/_setup_util.py
+set _SETUP_UTIL=C:/opt/ros/melodic/_setup_util.py
 
 if NOT EXIST "%_SETUP_UTIL%" (
   echo "Missing Python script: %_SETUP_UTIL%"
@@ -16,11 +14,29 @@ if NOT EXIST "%_SETUP_UTIL%" (
 )
 
 REM set the Python executable
-if "%PYTHON_DIR%" == "" (
-  set _PYTHON="%~d0/local/Python37/python.exe"
-) else (
-  set _PYTHON="%PYTHON_DIR:\=/%/python.exe"
+set _PYTHON="C:/local/Python37/python.exe"
+
+REM compute Python home and normalize Python executable path
+set PYTHONHOME=
+set _PYTHONEXE=
+for /f "usebackq tokens=*" %%a in ('%_PYTHON%') do (
+  set PYTHONHOME=%%~dpa
+  set _PYTHONEXE=%%~nxa
+  set _PYTHON="%%~dpa%%~nxa"
 )
+
+REM add Python home to PATH if necessary to avoid using the wrong Python executable
+setlocal enabledelayedexpansion
+set _PYTHON_FOUND=
+for %%i in (%_PYTHONEXE%) do (
+  set _PYTHON_FOUND="%%~$PATH:i"
+)
+
+REM delayed expansion is needed since there could be special characters in the PATH variable
+if not "!_PYTHON_FOUND!" == "!_PYTHON!" (
+  set PATH=%PYTHONHOME%;%PYTHONHOME%Scripts;!PATH!
+)
+endlocal & set PATH=%PATH%
 
 REM generate pseudo random temporary filename
 :GenerateTempFilename
@@ -72,6 +88,8 @@ set PATH=%LD_LIBRARY_PATH%;%PATH%
 REM unset temporary variables
 set _SETUP_UTIL=
 set _PYTHON=
+set _PYTHONEXE=
+set _PYTHON_FOUND=
 set _SETUP_TMP=
 set _CATKIN_ENVIRONMENT_HOOKS_COUNT=
 set _HOOK_COUNT=

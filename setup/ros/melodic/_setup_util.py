@@ -1,4 +1,4 @@
-#!D:/local/Python37/python.exe
+#!C:/local/Python37/python.exe
 # -*- coding: utf-8 -*-
 
 # Software License Agreement (BSD License)
@@ -262,12 +262,14 @@ if __name__ == '__main__':
             sys.exit(1)
 
         # environment at generation time
-        if 'ROS_HOME_CMAKE' in os.environ:
-            CMAKE_PREFIX_PATH = os.environ['ROS_HOME_CMAKE'].split(';')
-        else:
-            CMAKE_PREFIX_PATH = 'D:/opt/ros/melodic'.split(';')
+        CMAKE_PREFIX_PATH = 'C:/opt/ros/melodic'.split(';')
         # prepend current workspace if not already part of CPP
         base_path = os.path.dirname(__file__)
+        # CMAKE_PREFIX_PATH uses forward slash on all platforms, but __file__ is platform dependent
+        # base_path on Windows contains backward slashes, need to be converted to forward slashes before comparison
+        if os.path.sep != '/':
+            base_path = base_path.replace(os.path.sep, '/')
+
         if base_path not in CMAKE_PREFIX_PATH:
             CMAKE_PREFIX_PATH.insert(0, base_path)
         CMAKE_PREFIX_PATH = os.pathsep.join(CMAKE_PREFIX_PATH)

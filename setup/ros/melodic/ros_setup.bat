@@ -2,6 +2,7 @@
 @rem -----------------------------------------
 @set PYTHON_DIR=%~d0\local\Python37
 @set PYTHON_BIN_PATH=%PYTHON_DIR%;%PYTHON_DIR%\Scripts
+@set PYTHON_EXE=%PYTHON_DIR%\python.exe
 
 @set CMAKE_BIN_DIR=%~d0\local\cmake-3.13.1-win64-x64\bin
 @set VIM_DIR=%~d0\local\vim
