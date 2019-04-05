@@ -1,6 +1,7 @@
 @echo off
 
 set PYTHON_DIR=%~d0\local\Python37
+set PYTHON_EXE=%PYTHON_DIR%\python.exe
 set ROS_DISTRO=melodic
 
 set ROS_HOME=%~d0\\opt\\ros\\%ROS_DISTRO%
