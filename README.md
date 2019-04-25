@@ -8,12 +8,7 @@ Ros for Windows ( VS2017 )
 
 ## Set envronment variables
 ~~~
- > tools\setCMakeVars.bat
-~~~
-
-## Reset Python37 scripts
-~~~
- > chPyShebang.bat
+ > tools\setCMakeVars2.bat
 ~~~
 
 ## Build and install Ros4Win
