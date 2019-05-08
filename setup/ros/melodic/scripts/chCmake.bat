@@ -8,7 +8,7 @@ set CMAKE_NAME=%ROS_HOME%CMake\%PKG_NAME%-config.cmake
 if "%1" == "" goto :error
 if not exist %CMAKE_NAME% goto :error
  
-sed -i -e "s/[CDEFGHIJK]:\//%~d0\//g" %CMAKE_NAME%
+sed -i -e "s/[A-Z]:\//%~d0\//g" %CMAKE_NAME%
 
 echo reset %PKG_NAME%
 goto :end
