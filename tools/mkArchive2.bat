@@ -18,12 +18,12 @@ if ERRORLEVEL 1 goto END
 
 
 @set WORK_DIR=%CD%
-@cd /D R:\ros_pkg\%PKG_NAME%
+@cd /D %~d0\ros_pkg\%PKG_NAME%
 
-tar czvf  R:\ros_pkg\ros-melodic-%PKG_NAME:_=-%.tgz ros
+tar czvf  %~d0\ros_pkg\ros-melodic-%PKG_NAME:_=-%.tgz ros
 
 @cd /D %WORK_DIR%
-@rd /S /Q R:\ros_pkg\%PKG_NAME%
+@rd /S /Q %~d0\ros_pkg\%PKG_NAME%
 @echo === Finish to build %PKG_NAME% ===
 :END
 @endlocal

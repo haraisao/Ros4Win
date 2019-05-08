@@ -4,7 +4,7 @@
 
 @if "%PKG_NAME" == "" set PKG_NAME=ros
 @set TARGET=%1
-@set INSTALL_DIR=R:\ros_pkg\%PKG_NAME%\ros\melodic
+@set INSTALL_DIR=%~d0\ros_pkg\%PKG_NAME%\ros\melodic
 @set BUILD_DIR=%~d0\_build\%TARGET%
 
 echo %BUILD_DIR%
