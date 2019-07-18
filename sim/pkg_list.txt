@@ -1,1 +1,2 @@
-stage_ros=https://github.com/ros-simulation/stage_ros
+gazebo_ros_pkgs=https://github.com/haraisao/gazebo_ros_pkgs,Ros4Win
+stage_ros=https://github.com/haraisao/stage_ros,Ros4Win
