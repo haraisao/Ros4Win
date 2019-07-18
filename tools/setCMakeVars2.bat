@@ -10,9 +10,11 @@ set ROS_HOME_CMAKE=%~d0/opt/ros/%ROS_DISTRO%
 rem set ROS_HOME=R:\\opt\\ros\\%ROS_DISTRO%
 rem set ROS_HOME_CMAKE=R:/opt/ros/%ROS_DISTRO%
 
+set CMAKE_ROOT=%~d0\local\cmake-3.15.0-win64-x64
+
 set PYTHONPATH=%ROS_HOME%\Lib\site-packages\;%PYTHON_DIR%\Lib\site-packages;%PYTHONPATH%
 set PATH_ORG=%PATH%
-set PATH=%~dp0;%~d0\local\vim;%~d0\local\cmake-3.13.1-win64-x64\bin;%PYTHON_DIR%;%PYTHON_DIR%\Scripts;%PATH%
+set PATH=%~dp0;%~d0\local\vim;%CMAKE_ROOT%\bin;%PYTHON_DIR%;%PYTHON_DIR%\Scripts;%PATH%
 
 set CMAKE_PREFIX_PATH=%ROS_HOME_CMAKE%
 set LOCAL_LIBRARY_PATH=%~d0/local
