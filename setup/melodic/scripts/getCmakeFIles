@@ -1,0 +1,9 @@
+#!C:/local/Python37/python.exe
+import glob
+import sys
+
+if __name__ == '__main__':
+  pttn=sys.argv[1]+"/share/**/*.cmake"
+  files = glob.glob(pttn, recursive=True)
+  for x in files:
+    print(x)

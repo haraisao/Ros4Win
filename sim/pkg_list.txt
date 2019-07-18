@@ -1,0 +1,1 @@
+stage_ros=https://github.com/ros-simulation/stage_ros

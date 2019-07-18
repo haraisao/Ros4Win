@@ -9,9 +9,7 @@
 @call chCmake.bat urdfdom_headers
 
 @echo off
-@for /f "delims=" %%a in (cmake_list.txt) do @(  @call chConfigCmake.bat %%a )
-
-@for /f "delims=" %%a in (pycmd_list.txt) do @(  @call chPyCmd.bat %%a )
+@call resetRosCmake.bat
 
 @for /f "delims=" %%a in (profile_list.txt) do @(  @call chProfile.bat %%a )
 

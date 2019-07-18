@@ -8,7 +8,7 @@ if "%1" == "" goto :error
 if not exist %SCR_NAME% goto :error
 
 
-sed  -e "s/[A-Z]:\\/%~d0\\/g" %SCR_NAME%
+sed  -e "s/[CDEFGGH]:\\/%~d0\\/g" %SCR_NAME%
 
 @echo %SCR_NAME%
 

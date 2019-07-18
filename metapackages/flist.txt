@@ -1,0 +1,8 @@
+desktop
+desktop_full
+perception
+robot
+ros_base
+ros_core
+simulators
+viz
